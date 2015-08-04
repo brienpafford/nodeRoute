@@ -1,8 +1,17 @@
 <!doctype html>
 <html>
   <head>
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.css">
   </head>
   <body>
     <h2>Contact Me!</h2>
+    <div class = "container">
+		  <form action="/contact/message" method = "POST">
+	  	  Name: <input name ="name" type ="text" placeholder ="John Smith" label ="Name">
+	    	Email: <input name ="email" type ="text" placeholder ="jSmith@gmail.com" label ="Email">
+	    	Message: <input name ="message" type ="text" placeholder ="Drop Me a Line here!" label ="Message">
+	     <button class="red btn waves-effect waves-light" type="submit" name="action">Submit</button>
+	  </form>
+	  </div>
   </body>
 </html>
